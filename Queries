@@ -31,14 +31,10 @@ SELECT *
 FROM Tracks
 WHERE Milliseconds >= 5000000
 
-
-
 Question 2
 All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
 
 Run Query: Find all the invoices whose total is between $5 and $15 dollars.
-
-
 SELECT *
 FROM Invoices
 WHERE Total BETWEEN 5 AND 15
@@ -50,7 +46,6 @@ Run Query: Find all the customers from the following States: RJ, DF, AB, BC, CA,
 SELECT *
 FROM Customers
 WHERE State IN ('RJ','DF','AB','BC','CA','WA','NY')
-
 
 Question 4
 All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
@@ -64,7 +59,6 @@ Question 5
 All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
 
 Run Query: Find all the tracks whose name starts with 'All'.
-
 SELECT * 
 FROM Tracks
 WHERE Name LIKE 'All%'
@@ -73,8 +67,6 @@ Question 6
 All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
 
 Run Query: Find all the customer emails that start with "J" and are from gmail.com.
-
-
 SELECT *
 FROM Customers 
 WHERE Email LIKE 'J%@gmail.com'
@@ -83,8 +75,6 @@ Question 7
 All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
 
 Run Query: Find all the invoices from the billing city Brasília, Edmonton, and Vancouver and sort in descending order by invoice ID.
-
-
 SELECT *
 FROM Invoices
 WHERE BillingCity IN ('Brasilia','Edmonton','Vancouver')
@@ -95,13 +85,10 @@ Question 8
 All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
 
 Run Query: Show the number of orders placed by each customer (hint: this is found in the invoices table) and sort the result by the number of orders in descending order.
-
-
 SELECT COUNT(InvoiceId) as cnt
 FROM Invoices
 GROUP BY CustomerId
 ORDER BY InvoiceId DESC
-
 
 Question 9
 All of the questions in this quiz refer to the open source Chinook Database. Please familiarize yourself with the ER diagram to familiarize yourself with the table and column names to write accurate queries and get the appropriate answers.
