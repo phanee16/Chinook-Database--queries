@@ -1,5 +1,5 @@
-SQL basics
-Question 1
+# SQL basics
+## Question 1
 Retrieve all the records from the Employees table.
 SELECT *
 FROM Employees
